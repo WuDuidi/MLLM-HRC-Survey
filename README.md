@@ -123,7 +123,7 @@ Industry 5.0 calls for *human-centric smart manufacturing*. With the rise of MLL
 | HULC++         | LCBC             | Static image + language          | 7-DoF action           | HULC + VAPO [📄 Paper](#) [💻 Code](#) |
 
 
-#### 📊 1.4 Language-Enhanced Reinforcement Learning
+#### 📊 1.5 Language-Enhanced Reinforcement Learning
 | Method         | Policy Type     | Challenge                  | MLLM               | Role                    | Environment        |
 |----------------|------------------|----------------------------|--------------------|--------------------------|---------------------|
 | Di Palo        | BC               | Sparse-reward              | FLAN-T5, CLIP      | Subgoal generation       | MuJoCo              [📄 Paper](https://arxiv.org/abs/2302.02662) [💻 Code](https://github.com/filippo-dp/vision-language-planning) |
@@ -133,7 +133,7 @@ Industry 5.0 calls for *human-centric smart manufacturing*. With the rise of MLL
 | Eureka         | PPO              | Human-level reward         | GPT-4              | Zero-shot reward         | Isaac Gym           [📄 Paper](https://arxiv.org/abs/2310.08591) [💻 Code](https://github.com/NVIDIA/Eureka) |
 | LIV            | BC               | Goal-conditioned reward    | CLIP               | Multimodal value learning| MetaWorld           [📄 Paper](https://arxiv.org/abs/2403.03898) [💻 Code](https://github.com/LIV-Policy/LIV) |
 
-#### 📊 1.5 Language-Guided Diffusion Policies
+#### 📊 1.6 Language-Guided Diffusion Policies
 
 | Model           | Structure                    | Problem                    | Input                     | Output                  | Robot         | Links                                                                                           |
 |-----------------|------------------------------|-----------------------------|----------------------------|--------------------------|---------------|------------------------------------------------------------------------------------------------|
