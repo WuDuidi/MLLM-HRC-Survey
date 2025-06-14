@@ -63,24 +63,21 @@ Industry 5.0 calls for *human-centric smart manufacturing*. With the rise of MLL
 
 
 #### 📊 1.1 Robots Affordance and Value Learning
-| Method     | VFM                 | LLM        | VLM       | Benchmark/Data        | Tasks                                | Links                                                                 |
-|------------|---------------------|------------|-----------|------------------------|---------------------------------------|---------------------------------------------------------------------|
-| **Skill Affordance** |
-| CoPa       | Owl-ViT, SAM        | GPT-4V     | -         | VoxPoser              | Everyday manipulation tasks          | [📄 Paper](https://arxiv.org/html/2403.08248v1) [💻 Code](https://copa-2024.github.io/) |
-| CLIPort    | Transporter         | CLIP       | -         | Ravens                | Language-conditioned tasks           | [📄 Paper](https://arxiv.org/abs/2109.12098) [💻 Code](https://github.com/cliport/cliport) |
-| SayCan     | -                   | 540B PaLM  | -         | Everyday Robots       | Long-horizon tasks                   | [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
-| Voltron    | ViT                 | DistilBERT | -         | Franka Kitchen        | 5 robotics applications              | [📄 Paper](https://www.roboticsproceedings.org/rss19/p032.pdf) [💻 Code](https://sites.google.com/view/voltron-robotics) |
-| **Keypoint Affordance** |
-| MOKA       | GroundedSAM         | GPT-4V     | -         | Octo, VoxPoser        | Table-top manipulation, unseen objects | [📄 Paper](https://arxiv.org/html/2403.03174v2) [💻 Code](https://moka-manipulation.github.io/) |
-| ReKep      | DINOv2, SAM         | GPT-4o     | -         | VoxPoser              | In-the-wild bimanual manipulation     | [📄 Paper](https://rekep-robot.github.io/rekep.pdf) [💻 Code](https://rekep-robot.github.io/) |
-| KALIE      | CogVLM              | GPT-4V     | -         | MOKA, VoxPoser        | Diverse unseen objects               | [📄 Paper](https://arxiv.org/pdf/2409.14066) [💻 Code](https://kalie-vlm.github.io/) |
-| **Spatial Affordance** |
-| VoxPoser   | OWL-ViT, SAM        | GPT-4      | -         | RLBench               | Manipulation tasks                   | [📄 Paper](https://arxiv.org/abs/2307.05973) [💻 Code](https://voxposer.github.io/) |
-| RAM        | DINOv2 / CLIP       | GPT-4V     | -         | DROID                 | 3D contact planning                  | [📄 Paper](https://arxiv.org/html/2407.04689v1) [💻 Code](https://yuxuank.com/RAM/) |
-| RoboPoint  | CLIP, ViT-L/14      | Vicuna-13B | -         | WHERE2PLACE           | Language-conditioned 3D actions      | [📄 Paper](https://arxiv.org/pdf/2406.10721) [💻 Code](https://robo-point.github.io/) |
-| **Human Affordance** |
-| HRP        | DINO, CLIP          | -          | -         | Ego4D                 | Human-hand-object interaction        | [📄 Paper](https://hrp-robot.github.io/hrp.pdf) [💻 Code](https://hrp-robot.github.io) |
-| HULC++     | -                   | GPT-3      | -         | CALVIN                | Long-horizon manipulation            | [📄 Paper](https://arxiv.org/pdf/2210.01911) [💻 Code](http://hulc2.cs.uni-freiburg.de/) |
+
+| Category               | Method     | VFM                 | LLM/VLM        | Benchmark/Data        | Tasks                                | Links                                                                 |
+|------------------------|------------|---------------------|------------|------------------------|---------------------------------------|---------------------------------------------------------------------|
+| **Skill Affordance**   | CoPa       | Owl-ViT, SAM        | GPT-4V     | VoxPoser              | Everyday manipulation tasks          | [📄 Paper](https://arxiv.org/html/2403.08248v1) [💻 Code](https://copa-2024.github.io/) |
+|                        | CLIPort    | Transporter         | CLIP       | Ravens                | Language-conditioned tasks           | [📄 Paper](https://arxiv.org/abs/2109.12098) [💻 Code](https://github.com/cliport/cliport) |
+|                        | SayCan     | -                   | 540B PaLM  | Everyday Robots       | Long-horizon tasks                   | [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
+|                        | Voltron    | ViT                 | DistilBERT | Franka Kitchen        | 5 robotics applications              | [📄 Paper](https://www.roboticsproceedings.org/rss19/p032.pdf) [💻 Code](https://sites.google.com/view/voltron-robotics) |
+| **Keypoint Affordance**| MOKA       | GroundedSAM         | GPT-4V     | Octo, VoxPoser        | Table-top manipulation, unseen objects | [📄 Paper](https://arxiv.org/html/2403.03174v2) [💻 Code](https://moka-manipulation.github.io/) |
+|                        | ReKep      | DINOv2, SAM         | GPT-4o     | VoxPoser              | In-the-wild bimanual manipulation     | [📄 Paper](https://rekep-robot.github.io/rekep.pdf) [💻 Code](https://rekep-robot.github.io/) |
+|                        | KALIE      |              | CogVLM,GPT-4V     | MOKA, VoxPoser        | Diverse unseen objects               | [📄 Paper](https://arxiv.org/pdf/2409.14066) [💻 Code](https://kalie-vlm.github.io/) |
+| **Spatial Affordance** | VoxPoser   | OWL-ViT, SAM        | GPT-4      | RLBench               | Manipulation tasks                   | [📄 Paper](https://arxiv.org/abs/2307.05973) [💻 Code](https://voxposer.github.io/) |
+|                        | RAM        | DINOv2 / CLIP       | Text-embedding-3,GPT-4V     | DROID                 | 3D contact planning                  | [📄 Paper](https://arxiv.org/html/2407.04689v1) [💻 Code](https://yuxuank.com/RAM/) |
+|                        | RoboPoint  | CLIP, ViT-L/14      | Vicuna-13B | WHERE2PLACE           | Language-conditioned 3D actions      | [📄 Paper](https://arxiv.org/pdf/2406.10721) [💻 Code](https://robo-point.github.io/) |
+| **Human Affordance**   | HRP        | DINO, CLIP          | -          | Ego4D                 | Human-hand-object interaction        | [📄 Paper](https://hrp-robot.github.io/hrp.pdf) [💻 Code](https://hrp-robot.github.io) |
+|                        | HULC++     | -                   | GPT-3, MiniLM-L3-v2      | CALVIN                | Long-horizon manipulation            | [📄 Paper](https://arxiv.org/pdf/2210.01911) [💻 Code](http://hulc2.cs.uni-freiburg.de/) |
 
 #### 📊 1.2 High-level Step-by-step Task Planning and Executable Code Generation 
 | Method         | VFM           | LLM/VLM               | Benchmark         | Robot          | Tasks                             | Links                                                                 |
