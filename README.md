@@ -63,79 +63,76 @@ Industry 5.0 calls for *human-centric smart manufacturing*. With the rise of MLL
 
 
 #### 📊 1.1 Robots Affordance and Value Learning
-
-| Method     | VFM                 | LLM        | VLM       | Benchmark/Data        | Tasks                                |
-|------------|---------------------|------------|-----------|------------------------|---------------------------------------|
+| Method     | VFM                 | LLM        | VLM       | Benchmark/Data        | Tasks                                | Links                                                                 |
+|------------|---------------------|------------|-----------|------------------------|---------------------------------------|---------------------------------------------------------------------|
 | **Skill Affordance** |
-| CoPa       | Owl-ViT, SAM        | GPT-4V     | -         | VoxPoser              | Everyday manipulation tasks [📄 Paper](https://arxiv.org/html/2403.08248v1) [💻 Code](https://copa-2024.github.io/) |
-| CLIPort    | Transporter         | CLIP       | -         | Ravens                | Language-conditioned tasks [📄 Paper](https://arxiv.org/abs/2109.12098) [💻 Code](https://github.com/cliport/cliport) |
-| SayCan     | -                   | 540B PaLM  | -         | Everyday Robots       | Long-horizon tasks [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
-| Voltron    | ViT                 | DistilBERT | -         | Franka Kitchen        | 5 robotics applications [📄 Paper](https://www.roboticsproceedings.org/rss19/p032.pdf) [💻 Code](https://sites.google.com/view/voltron-robotics) |
+| CoPa       | Owl-ViT, SAM        | GPT-4V     | -         | VoxPoser              | Everyday manipulation tasks          | [📄 Paper](https://arxiv.org/html/2403.08248v1) [💻 Code](https://copa-2024.github.io/) |
+| CLIPort    | Transporter         | CLIP       | -         | Ravens                | Language-conditioned tasks           | [📄 Paper](https://arxiv.org/abs/2109.12098) [💻 Code](https://github.com/cliport/cliport) |
+| SayCan     | -                   | 540B PaLM  | -         | Everyday Robots       | Long-horizon tasks                   | [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
+| Voltron    | ViT                 | DistilBERT | -         | Franka Kitchen        | 5 robotics applications              | [📄 Paper](https://www.roboticsproceedings.org/rss19/p032.pdf) [💻 Code](https://sites.google.com/view/voltron-robotics) |
 | **Keypoint Affordance** |
-| MOKA       | GroundedSAM         | GPT-4V     | -         | Octo, VoxPoser        | Table-top manipulation, unseen objects [📄 Paper](https://arxiv.org/html/2403.03174v2) [💻 Code](https://moka-manipulation.github.io/) |
-| ReKep      | DINOv2, SAM         | GPT-4o     | -         | VoxPoser              | In-the-wild bimanual manipulation [📄 Paper](https://rekep-robot.github.io/rekep.pdf) [💻 Code](https://rekep-robot.github.io/) |
-| KALIE      | CogVLM              | GPT-4V     | -         | MOKA, VoxPoser        | Diverse unseen objects [📄 Paper](https://arxiv.org/pdf/2409.14066) [💻 Code](https://kalie-vlm.github.io/) |
+| MOKA       | GroundedSAM         | GPT-4V     | -         | Octo, VoxPoser        | Table-top manipulation, unseen objects | [📄 Paper](https://arxiv.org/html/2403.03174v2) [💻 Code](https://moka-manipulation.github.io/) |
+| ReKep      | DINOv2, SAM         | GPT-4o     | -         | VoxPoser              | In-the-wild bimanual manipulation     | [📄 Paper](https://rekep-robot.github.io/rekep.pdf) [💻 Code](https://rekep-robot.github.io/) |
+| KALIE      | CogVLM              | GPT-4V     | -         | MOKA, VoxPoser        | Diverse unseen objects               | [📄 Paper](https://arxiv.org/pdf/2409.14066) [💻 Code](https://kalie-vlm.github.io/) |
 | **Spatial Affordance** |
-| VoxPoser   | OWL-ViT, SAM        | GPT-4      | -         | RLBench               | Manipulation tasks [📄 Paper](https://arxiv.org/abs/2307.05973) [💻 Code](https://voxposer.github.io/) |
-| RAM        | DINOv2 / CLIP       | GPT-4V     | -         | DROID                 | 3D contact planning [📄 Paper](https://arxiv.org/html/2407.04689v1) [💻 Code](https://yuxuank.com/RAM/) |
-| RoboPoint  | CLIP, ViT-L/14      | Vicuna-13B | -         | WHERE2PLACE           | Language-conditioned 3D actions [📄 Paper](https://arxiv.org/pdf/2406.10721) [💻 Code](https://robo-point.github.io/) |
+| VoxPoser   | OWL-ViT, SAM        | GPT-4      | -         | RLBench               | Manipulation tasks                   | [📄 Paper](https://arxiv.org/abs/2307.05973) [💻 Code](https://voxposer.github.io/) |
+| RAM        | DINOv2 / CLIP       | GPT-4V     | -         | DROID                 | 3D contact planning                  | [📄 Paper](https://arxiv.org/html/2407.04689v1) [💻 Code](https://yuxuank.com/RAM/) |
+| RoboPoint  | CLIP, ViT-L/14      | Vicuna-13B | -         | WHERE2PLACE           | Language-conditioned 3D actions      | [📄 Paper](https://arxiv.org/pdf/2406.10721) [💻 Code](https://robo-point.github.io/) |
 | **Human Affordance** |
-| HRP        | DINO, CLIP          | -          | -         | Ego4D                 | Human-hand-object interaction [📄 Paper](https://hrp-robot.github.io/hrp.pdf) [💻 Code](https://hrp-robot.github.io) |
-| HULC++     | -                   | GPT-3      | -         | CALVIN                | Long-horizon manipulation [📄 Paper](https://arxiv.org/pdf/2210.01911) [💻 Code](http://hulc2.cs.uni-freiburg.de/) |
-
+| HRP        | DINO, CLIP          | -          | -         | Ego4D                 | Human-hand-object interaction        | [📄 Paper](https://hrp-robot.github.io/hrp.pdf) [💻 Code](https://hrp-robot.github.io) |
+| HULC++     | -                   | GPT-3      | -         | CALVIN                | Long-horizon manipulation            | [📄 Paper](https://arxiv.org/pdf/2210.01911) [💻 Code](http://hulc2.cs.uni-freiburg.de/) |
 
 #### 📊 1.2 High-level Step-by-step Task Planning and Executable Code Generation 
-| Method         | VFM           | LLM/VLM               | Benchmark         | Robot          | Tasks                             |
-|----------------|---------------|------------------------|-------------------|----------------|------------------------------------|
+| Method         | VFM           | LLM/VLM               | Benchmark         | Robot          | Tasks                             | Links                                                                 |
+|----------------|---------------|------------------------|-------------------|----------------|------------------------------------|---------------------------------------------------------------------|
 | **Subtask Planning** |
-| PaLM-E         | -             | PaLM                  | Language-Table    | Everyday Robot | Visually-grounded dialogue [📄 Paper](https://arxiv.org/abs/2303.03378) [💻 Code](https://palm-e.github.io/) |
-| Pg-vlm         | OWL-ViT       | GPT-4, PG-InstructBLIP| PHYSOBJECTS       | Franka Panda   | Table-top manipulation [📄 Paper](https://arxiv.org/abs/2309.02561) [💻 Code](https://iliad.stanford.edu/pg-vlm/) |
-| ViLA           | OWL-ViT       | Llama2-70B, GPT-4V    | Ravens            | Franka Panda   | Long-horizon planning [📄 Paper](https://arxiv.org/abs/2402.13918) [💻 Code](https://github.com/vila-group/ViLA) |
-| SayCan         | ViLD          | 540B PaLM             | Everyday Robots   | Everyday Robot | Long-horizon tasks [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
-| GD             | OWL-ViT       | InstructGPT, PaLM     | Ravens, CLIPort   | Everyday Robot | Rearrangement, mobile manipulation [📄 Paper](https://arxiv.org/abs/2303.03836) [💻 Code](https://github.com/google-research/google-research/tree/master/generative_playground) |
-| Text2Motion    | -             | Text-davinci-003      | TableEnv          | -              | Long-horizon manipulation [📄 Paper](https://arxiv.org/abs/2303.12153) [💻 Code](https://sites.google.com/stanford.edu/text2motion) |
+| PaLM-E         | -             | PaLM                  | Language-Table    | Everyday Robot | Visually-grounded dialogue         | [📄 Paper](https://arxiv.org/abs/2303.03378) [💻 Code](https://palm-e.github.io/) |
+| Pg-vlm         | OWL-ViT       | GPT-4, PG-InstructBLIP| PHYSOBJECTS       | Franka Panda   | Table-top manipulation             | [📄 Paper](https://arxiv.org/abs/2309.02561) [💻 Code](https://iliad.stanford.edu/pg-vlm/) |
+| ViLA           | OWL-ViT       | Llama2-70B, GPT-4V    | Ravens            | Franka Panda   | Long-horizon planning              | [📄 Paper](https://arxiv.org/abs/2402.13918) [💻 Code](https://github.com/vila-group/ViLA) |
+| SayCan         | ViLD          | 540B PaLM             | Everyday Robots   | Everyday Robot | Long-horizon tasks                 | [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
+| GD             | OWL-ViT       | InstructGPT, PaLM     | Ravens, CLIPort   | Everyday Robot | Rearrangement, mobile manipulation | [📄 Paper](https://arxiv.org/abs/2303.03836) [💻 Code](https://github.com/google-research/google-research/tree/master/generative_playground) |
+| Text2Motion    | -             | Text-davinci-003      | TableEnv          | -              | Long-horizon manipulation          | [📄 Paper](https://arxiv.org/abs/2303.12153) [💻 Code](https://sites.google.com/stanford.edu/text2motion) |
 | **Code Generation** |
-| Instruct2Act   | SAM           | Text-davinci-003      | VIMABench         | -              | Manipulation & reasoning [📄 Paper](Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model) [💻 Code](https://github.com/OpenGVLab/Instruct2Act) |
-| Inner Monologue| MDETR         | InstructGPT           | Ravens, CLIPort   | UR5e, ERobot   | Mobile rearrangement [📄 Paper](https://arxiv.org/abs/2207.05608) [💻 Code](https://innermonologue.github.io/) |
-| CaP            | ViLD, MDETR   | GPT-3Codex            | HumanEval         | UR5e           | Table-top & mobile manipulation [📄 Paper]https://arxiv.org/abs/2209.07753) [💻 Code](https://code-as-policies.github.io/) |
-| ProgPrompt     | ViLD          | GPT-3                 | Virtual Home      | Panda          | Household table-top tasks [📄 Paper](https://arxiv.org/abs/2209.11302) [💻 Code](https://progprompt.github.io/) |
-
+| Instruct2Act   | SAM           | Text-davinci-003      | VIMABench         | -              | Manipulation & reasoning           | [📄 Paper](https://arxiv.org/abs/2305.11176) [💻 Code](https://github.com/OpenGVLab/Instruct2Act) |
+| Inner Monologue| MDETR         | InstructGPT           | Ravens, CLIPort   | UR5e, ERobot   | Mobile rearrangement               | [📄 Paper](https://arxiv.org/abs/2207.05608) [💻 Code](https://innermonologue.github.io/) |
+| CaP            | ViLD, MDETR   | GPT-3Codex            | HumanEval         | UR5e           | Table-top & mobile manipulation    | [📄 Paper](https://arxiv.org/abs/2209.07753) [💻 Code](https://code-as-policies.github.io/) |
+| ProgPrompt     | ViLD          | GPT-3                 | Virtual Home      | Panda          | Household table-top tasks          | [📄 Paper](https://arxiv.org/abs/2209.11302) [💻 Code](https://progprompt.github.io/) |
 
 
 #### 📊 1.3 Robots Learning from Demonstration
-| Model         | Structure                | Problem                  | Benchmark     | Input                       | Output                        |
-|---------------|--------------------------|---------------------------|---------------|-----------------------------|-------------------------------|
-| SeeDo         | SAM2 + GPT-4o            | Code Generation           | CaP           | Human demo videos           | Executable code [📄 Paper](https://arxiv.org/pdf/2410.08792) [💻 Code](https://github.com/ai4ce/SeeDo) |
-| OKAMI         | GPT-4V + SLAHMR          | Humanoid manipulation     | ORION         | Human video                 | Manipulation policy [📄 Paper](https://arxiv.org/pdf/2410.11792) [💻 Code](https://ut-austin-rpl.github.io/OKAMI/) |
-| R3M           | ResNet50 + DistilBERT    | Visual Representation     | Ego4D         | Image, proprioception       | Action vector [📄 Paper](https://arxiv.org/abs/2203.12601) [💻 Code](https://github.com/facebookresearch/r3m) |
-| R+X           | DINO + Gemini            | Skill retrieval           | R3M           | RGB-D observation           | 6-DoF action [📄 Paper](https://arxiv.org/abs/2407.12957) [💻 Code](https://www.robot-learning.uk/r-plus-x) |
-| RT-Trajectory | PaLM-E                   | Trajectory generalization | RT-1          | Drawings, videos            | Trajectory tokens [📄 Paper](https://arxiv.org/abs/2311.01977) [💻 Code](https://rt-trajectory.github.io/) |
-| Gen2Act       | Gemini + VideoPoet       | Behavior cloning          | Vid2robot     | Instruction, observation    | Trajectory [📄 Paper](https://arxiv.org/abs/2409.16283) [💻 Code](https://homangab.github.io/gen2act/) |
-| EgoMimic      | ACT-based                | End-to-end imitation      | ACT           | Hand pose, proprioception   | SE(3) pose prediction [📄 Paper](https://arxiv.org/abs/2410.24221) [💻 Code](https://egomimic.github.io/) |
 
+| Model         | Structure                | Problem                  | Benchmark     | Input                       | Output                        | Links                                                                 |
+|---------------|--------------------------|---------------------------|---------------|-----------------------------|-------------------------------|---------------------------------------------------------------------|
+| SeeDo         | SAM2 + GPT-4o            | Code Generation           | CaP           | Human demo videos           | Executable code               | [📄 Paper](https://arxiv.org/pdf/2410.08792) [💻 Code](https://github.com/ai4ce/SeeDo) |
+| OKAMI         | GPT-4V + SLAHMR          | Humanoid manipulation     | ORION         | Human video                 | Manipulation policy           | [📄 Paper](https://arxiv.org/pdf/2410.11792) [💻 Code](https://ut-austin-rpl.github.io/OKAMI/) |
+| R3M           | ResNet50 + DistilBERT    | Visual Representation     | Ego4D         | Image, proprioception       | Action vector                 | [📄 Paper](https://arxiv.org/abs/2203.12601) [💻 Code](https://github.com/facebookresearch/r3m) |
+| R+X           | DINO + Gemini            | Skill retrieval           | R3M           | RGB-D observation           | 6-DoF action                  | [📄 Paper](https://arxiv.org/abs/2407.12957) [💻 Code](https://www.robot-learning.uk/r-plus-x) |
+| RT-Trajectory | PaLM-E                   | Trajectory generalization | RT-1          | Drawings, videos            | Trajectory tokens             | [📄 Paper](https://arxiv.org/abs/2311.01977) [💻 Code](https://rt-trajectory.github.io/) |
+| Gen2Act       | Gemini + VideoPoet       | Behavior cloning          | Vid2robot     | Instruction, observation    | Trajectory                    | [📄 Paper](https://arxiv.org/abs/2409.16283) [💻 Code](https://homangab.github.io/gen2act/) |
+| EgoMimic      | ACT-based                | End-to-end imitation      | ACT           | Hand pose, proprioception   | SE(3) pose prediction         | [📄 Paper](https://arxiv.org/abs/2410.24221) [💻 Code](https://egomimic.github.io/) |
 
 
 #### 📊 1.4 Robots Learning from Demonstration
-| Method         | Policy Type     | Input State                      | Action Output         | Core Structure         |
-|----------------|------------------|----------------------------------|------------------------|-------------------------|
-| PlayLMP        | GCBC             | Observation, proprioception      | 8-DoF action           | Seq2Seq CVAE [📄 Paper](https://arxiv.org/abs/1903.01973) [💻 Code](https://learning-from-play.github.io/) |
-| MCIL           | GCBC             | Observation + instruction        | 8-DoF action           | TransferLangLfP [📄 Paper](https://arxiv.org/abs/2005.07648) [💻 Code](https://language-play.github.io/) |
-| BC-Z           | End-to-end BC    | Image + task embedding           | 7-DoF action           | ResNet18 + FiLM + FC [📄 Paper](https://arxiv.org/abs/2202.02005) [💻 Code](https://sites.google.com/view/bc-z/home) |
-| Language Table | LCBC             | Language instruction             | 2D point               | LAVA [📄 Paper](https://arxiv.org/abs/2210.06407) [💻 Code](https://interactive-language.github.io/) |
-| CALVIN         | LH-MTLC          | Multi-modal input                | Cartesian or joint     | Seq2Seq CVAE [📄 Paper](https://arxiv.org/abs/2112.03227) [💻 Code](http://calvin.cs.uni-freiburg.de/) |
-| HULC           | LCBC             | Static image + language          | 7-DoF action           | Seq2Seq CVAE [📄 Paper](https://arxiv.org/abs/2204.06252) [💻 Code](http://hulc.cs.uni-freiburg.de/) |
-| HULC++         | LCBC             | Static image + language          | 7-DoF action           | HULC + VAPO [📄 Paper](https://arxiv.org/pdf/2210.01911) [💻 Code](http://hulc2.cs.uni-freiburg.de/) |
 
+| Method         | Policy Type     | Input State                      | Action Output         | Core Structure         | Links                                                                 |
+|----------------|------------------|----------------------------------|------------------------|-------------------------|---------------------------------------------------------------------|
+| PlayLMP        | GCBC             | Observation, proprioception      | 8-DoF action           | Seq2Seq CVAE            | [📄 Paper](https://arxiv.org/abs/1903.01973) [💻 Code](https://learning-from-play.github.io/) |
+| MCIL           | GCBC             | Observation + instruction        | 8-DoF action           | TransferLangLfP         | [📄 Paper](https://arxiv.org/abs/2005.07648) [💻 Code](https://language-play.github.io/) |
+| BC-Z           | End-to-end BC    | Image + task embedding           | 7-DoF action           | ResNet18 + FiLM + FC    | [📄 Paper](https://arxiv.org/abs/2202.02005) [💻 Code](https://sites.google.com/view/bc-z/home) |
+| Language Table | LCBC             | Language instruction             | 2D point               | LAVA                    | [📄 Paper](https://arxiv.org/abs/2210.06407) [💻 Code](https://interactive-language.github.io/) |
+| CALVIN         | LH-MTLC          | Multi-modal input                | Cartesian or joint     | Seq2Seq CVAE            | [📄 Paper](https://arxiv.org/abs/2112.03227) [💻 Code](http://calvin.cs.uni-freiburg.de/) |
+| HULC           | LCBC             | Static image + language          | 7-DoF action           | Seq2Seq CVAE            | [📄 Paper](https://arxiv.org/abs/2204.06252) [💻 Code](http://hulc.cs.uni-freiburg.de/) |
+| HULC++         | LCBC             | Static image + language          | 7-DoF action           | HULC + VAPO             | [📄 Paper](https://arxiv.org/pdf/2210.01911) [💻 Code](http://hulc2.cs.uni-freiburg.de/) |
 
 #### 📊 1.5 Language-Enhanced Reinforcement Learning
-| Method         | Policy Type     | Challenge                  | MLLM               | Role                    | Environment        |
-|----------------|------------------|----------------------------|--------------------|--------------------------|---------------------|
-| Di Palo        | BC               | Sparse-reward              | FLAN-T5, CLIP      | Subgoal generation       | MuJoCo              [📄 Paper](https://arxiv.org/abs/2307.09668) [💻 Code](#) |
-| L2R            | MJPC             | Reward optimization        | GPT-4              | Reward function design   | MuJoCo              [📄 Paper](https://arxiv.org/abs/2306.08647) [💻 Code](https://language-to-reward.github.io/) |
-| VLM-RM         | DQN, SAC         | Zero-shot rewards          | CLIP               | Reward computation       | -                   [📄 Paper](https://arxiv.org/abs/2310.12921) [💻 Code](https://sites.google.com/view/vlm-rm) |
-| Song et al.    | PPO              | Self-refinement            | GPT-4              | Reward designer          | Isaac Sim           [📄 Paper](https://arxiv.org/abs/2309.06687) [💻 Code](#) |
-| Eureka         | PPO              | Human-level reward         | GPT-4              | Zero-shot reward         | Isaac Gym           [📄 Paper](https://arxiv.org/abs/2310.12931) [💻 Code](https://eureka-research.github.io/) |
-| LIV            | BC               | Goal-conditioned reward    | CLIP               | Multimodal value learning| MetaWorld           [📄 Paper](https://arxiv.org/abs/2306.00958) [💻 Code](https://penn-pal-lab.github.io/LIV/) |
+| Method         | Policy Type     | Challenge                  | MLLM               | Role                    | Environment        | Links                                                                 |
+|----------------|------------------|----------------------------|--------------------|--------------------------|---------------------|---------------------------------------------------------------------|
+| Di Palo        | BC               | Sparse-reward              | FLAN-T5, CLIP      | Subgoal generation       | MuJoCo              | [📄 Paper](https://arxiv.org/abs/2307.09668) [💻 Code](#) |
+| L2R            | MJPC             | Reward optimization        | GPT-4              | Reward function design   | MuJoCo              | [📄 Paper](https://arxiv.org/abs/2306.08647) [💻 Code](https://language-to-reward.github.io/) |
+| VLM-RM         | DQN, SAC         | Zero-shot rewards          | CLIP               | Reward computation       | -                   | [📄 Paper](https://arxiv.org/abs/2310.12921) [💻 Code](https://sites.google.com/view/vlm-rm) |
+| Song et al.    | PPO              | Self-refinement            | GPT-4              | Reward designer          | Isaac Sim           | [📄 Paper](https://arxiv.org/abs/2309.06687) [💻 Code](#) |
+| Eureka         | PPO              | Human-level reward         | GPT-4              | Zero-shot reward         | Isaac Gym           | [📄 Paper](https://arxiv.org/abs/2310.12931) [💻 Code](https://eureka-research.github.io/) |
+| LIV            | BC               | Goal-conditioned reward    | CLIP               | Multimodal value learning| MetaWorld           | [📄 Paper](https://arxiv.org/abs/2306.00958) [💻 Code](https://penn-pal-lab.github.io/LIV/) |
 
 
 #### 📊 1.6 Language-Guided Diffusion Policies
@@ -230,7 +227,7 @@ Industry 5.0 calls for *human-centric smart manufacturing*. With the rise of MLL
 | Name | Type | Focus Area | Key Features / Environment | Link | Key Publication |
 |---|---|---|---|---|---|
 |**Dataset**  | Open X-Embodiment (OpenX) | General Manipulation | <details><summary>Details</summary>Aggregates 20+ datasets, cross-embodiment/task/environment, >1M trajectories | [💻Project](https://robotics-transformer-x.github.io/) | [📄 Paper](https://arxiv.org/abs/2310.08864) |
-|  | DROID| Real-world Manipulation | <details><summary>Details</summary>Large-scale human-collected data (500+ tasks, 26k hours) | [💻Project](https://droid-dataset.github.io/) |[📄 Paper](https://arxiv.org/abs/2403.06037) |
+|  | DROID| Real-world Manipulation | <details><summary>Details</summary>Large-scale human-collected data (500+ tasks, 26k hours) | [💻Project](https://droid-dataset.github.io/) | [📄 Paper](https://arxiv.org/abs/2403.06037) |
 |  | BEHAVIOR-1K | Household Activities | <details><summary>Details</summary>1000 simulated human household activities | [💻Project](https://behavior.stanford.edu/) | [📄 Paper](https://arxiv.org/abs/2108.03332) |
 | **Simulator** | MuJoCo | Physics Engine | <details><summary>Details</summary>Popular physics engine for robotics and RL | [💻Website](https://mujoco.org/) | - |
 |  | PyBullet | Physics Engine | <details><summary>Details</summary>Open-source physics engine, used for CALVIN, etc. | [💻Website](https://pybullet.org/) | - |
