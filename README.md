@@ -80,20 +80,19 @@ Industry 5.0 calls for *human-centric smart manufacturing*. With the rise of MLL
 |                        | HULC++     | -                   | GPT-3, MiniLM-L3-v2      | CALVIN                | Long-horizon manipulation            | [📄 Paper](https://arxiv.org/pdf/2210.01911) [💻 Code](http://hulc2.cs.uni-freiburg.de/) |
 
 #### 📊 1.2 High-level Step-by-step Task Planning and Executable Code Generation 
-| Method         | VFM           | LLM/VLM               | Benchmark         | Robot          | Tasks                             | Links                                                                 |
-|----------------|---------------|------------------------|-------------------|----------------|------------------------------------|---------------------------------------------------------------------|
-| **Subtask Planning** |
-| PaLM-E         | -             | PaLM                  | Language-Table    | Everyday Robot | Visually-grounded dialogue         | [📄 Paper](https://arxiv.org/abs/2303.03378) [💻 Code](https://palm-e.github.io/) |
-| Pg-vlm         | OWL-ViT       | GPT-4, PG-InstructBLIP| PHYSOBJECTS       | Franka Panda   | Table-top manipulation             | [📄 Paper](https://arxiv.org/abs/2309.02561) [💻 Code](https://iliad.stanford.edu/pg-vlm/) |
-| ViLA           | OWL-ViT       | Llama2-70B, GPT-4V    | Ravens            | Franka Panda   | Long-horizon planning              | [📄 Paper](https://arxiv.org/abs/2402.13918) [💻 Code](https://github.com/vila-group/ViLA) |
-| SayCan         | ViLD          | 540B PaLM             | Everyday Robots   | Everyday Robot | Long-horizon tasks                 | [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
-| GD             | OWL-ViT       | InstructGPT, PaLM     | Ravens, CLIPort   | Everyday Robot | Rearrangement, mobile manipulation | [📄 Paper](https://arxiv.org/abs/2303.03836) [💻 Code](https://github.com/google-research/google-research/tree/master/generative_playground) |
-| Text2Motion    | -             | Text-davinci-003      | TableEnv          | -              | Long-horizon manipulation          | [📄 Paper](https://arxiv.org/abs/2303.12153) [💻 Code](https://sites.google.com/stanford.edu/text2motion) |
-| **Code Generation** |
-| Instruct2Act   | SAM           | Text-davinci-003      | VIMABench         | -              | Manipulation & reasoning           | [📄 Paper](https://arxiv.org/abs/2305.11176) [💻 Code](https://github.com/OpenGVLab/Instruct2Act) |
-| Inner Monologue| MDETR         | InstructGPT           | Ravens, CLIPort   | UR5e, ERobot   | Mobile rearrangement               | [📄 Paper](https://arxiv.org/abs/2207.05608) [💻 Code](https://innermonologue.github.io/) |
-| CaP            | ViLD, MDETR   | GPT-3Codex            | HumanEval         | UR5e           | Table-top & mobile manipulation    | [📄 Paper](https://arxiv.org/abs/2209.07753) [💻 Code](https://code-as-policies.github.io/) |
-| ProgPrompt     | ViLD          | GPT-3                 | Virtual Home      | Panda          | Household table-top tasks          | [📄 Paper](https://arxiv.org/abs/2209.11302) [💻 Code](https://progprompt.github.io/) |
+
+| Category            | Method         | VFM           | LLM/VLM               | Benchmark         | Robot          | Tasks                             | Links                                                                 |
+|---------------------|----------------|---------------|------------------------|-------------------|----------------|------------------------------------|---------------------------------------------------------------------|
+| **Subtask Planning**| PaLM-E         | -             | PaLM                  | Language-Table    | Everyday Robot | Visually-grounded dialogue         | [📄 Paper](https://arxiv.org/abs/2303.03378) [💻 Code](https://palm-e.github.io/) |
+|                     | Pg-vlm         | OWL-ViT       | GPT-4, PG-InstructBLIP| PHYSOBJECTS       | Franka Panda   | Table-top manipulation             | [📄 Paper](https://arxiv.org/abs/2309.02561) [💻 Code](https://iliad.stanford.edu/pg-vlm/) |
+|                     | ViLA           | OWL-ViT       | Llama2-70B, GPT-4V    | Ravens            | Franka Panda   | Long-horizon planning              | [📄 Paper](https://arxiv.org/abs/2402.13918) [💻 Code](https://github.com/vila-group/ViLA) |
+|                     | SayCan         | ViLD          | 540B PaLM             | Everyday Robots   | Everyday Robot | Long-horizon tasks                 | [📄 Paper](https://say-can.github.io/assets/palm_saycan.pdf) [💻 Code](https://say-can.github.io/) |
+|                     | GD             | OWL-ViT       | InstructGPT, PaLM     | Ravens, CLIPort   | Everyday Robot | Rearrangement, mobile manipulation | [📄 Paper](https://arxiv.org/abs/2303.03836) [💻 Code](https://github.com/google-research/google-research/tree/master/generative_playground) |
+|                     | Text2Motion    | -             | Text-davinci-003      | TableEnv          | -              | Long-horizon manipulation          | [📄 Paper](https://arxiv.org/abs/2303.12153) [💻 Code](https://sites.google.com/stanford.edu/text2motion) |
+| **Code Generation** | Instruct2Act   | SAM           | Text-davinci-003      | VIMABench         | -              | Manipulation & reasoning           | [📄 Paper](https://arxiv.org/abs/2305.11176) [💻 Code](https://github.com/OpenGVLab/Instruct2Act) |
+|                     | Inner Monologue| MDETR         | InstructGPT           | Ravens, CLIPort   | UR5e, ERobot   | Mobile rearrangement               | [📄 Paper](https://arxiv.org/abs/2207.05608) [💻 Code](https://innermonologue.github.io/) |
+|                     | CaP            | ViLD, MDETR   | GPT-3Codex            | HumanEval         | UR5e           | Table-top & mobile manipulation    | [📄 Paper](https://arxiv.org/abs/2209.07753) [💻 Code](https://code-as-policies.github.io/) |
+|                     | ProgPrompt     | ViLD          | GPT-3                 | Virtual Home      | Panda          | Household table-top tasks          | [📄 Paper](https://arxiv.org/abs/2209.11302) [💻 Code](https://progprompt.github.io/) |
 
 
 #### 📊 1.3 Robots Learning from Demonstration
